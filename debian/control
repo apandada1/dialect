@@ -1,0 +1,41 @@
+Source: dialect
+Section: gnome
+Priority: optional
+Maintainer: Archisman Panigrahi <apandada1@gmail.com>
+Build-Depends: debhelper-compat(=10),
+	desktop-file-utils,
+	gettext,
+	meson (>= 0.50),
+	pkg-config,
+	libglib2.0-dev,
+	appstream,
+	gobject-introspection,
+	libgirepository1.0-dev,
+	python-gi-dev,
+	libgtk-3-dev
+Standards-Version: 4.5.0
+Rules-Requires-Root: no
+Homepage: https://github.com/dialect-app/dialect
+Vcs-Browser: https://github.com/dialect-app/dialect
+Vcs-Git: https://github.com/dialect-app/dialect.git
+
+Package: dialect
+Architecture: all
+Depends: ${misc:Depends},
+	gir1.2-handy-1,
+	gir1.2-gtk-3.0,
+	python3-gst-1.0,
+	python3-googletrans,
+	python3-gtts,
+	python3-dbus,
+	python3-httpx
+Description: A translation app for GNOME
+ A simple and modern translation app built with Python and Google translate API.
+ Features:
+    Translation based on the googletrans Python API, an unofficial API for Google Translate
+    Translation based on the LibreTranslate API, allowing you to use any public instance
+    Translation history
+    Automatic language detection
+    Text to speech
+    Clipboard buttons
+
