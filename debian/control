@@ -28,7 +28,9 @@ Depends: ${misc:Depends},
 	python3-googletrans,
 	python3-gtts,
 	python3-dbus,
-	python3-httpx
+	python3-httpx,
+	python3-httpcore,
+	python3-h2
 Description: A translation app for GNOME
  A simple and modern translation app built with Python and Google translate API.
  Features:
